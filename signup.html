@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<!-- Add custom CSS styles here -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			max-width: 500px;
+			margin: 0 auto;
+		}
+		input[type="text"], input[type="password"], input[type="email"], select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			font-size: 16px;
+			color: #333;
+		}
+		input[type="submit"], button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover, button:hover {
+			background-color: #3e8e41;
+		}
+		label {
+			display: block;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.eye-icon {
+			position: relative;
+			top: -28px;
+			right: 10px;
+			color: #ccc;
+			cursor: pointer;
+		}
+		.eye-icon:hover {
+			color: #333;
+		}
+	</style>
+	<!-- Add Font Awesome CDN for eye icon -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<form action="/signup" method="post">
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required>
+		<span class="eye-icon" onclick="togglePasswordVisibility()">
+			<i class="far fa-eye"></i>
+		</span>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="country-code">Country Code</label>
+		<select id="country-code" name="country-code" required>
+			<option value="">Select country code</option>
+			<option value="+1">+1 (USA)</option>
+			<option value="+44">+44 (UK)</option>
+			<option value="+91">+91 (India)</option>
+			<!-- Add more options as needed -->
+		</select>
+
+		<label for="phone-number">Phone Number</label>
+		<input type="text" id="phone-number" name="phone-number" required>
+
+		<input type="submit" value="Sign up">
+	</form>
+
+	<script>
+		function togglePasswordVisibility() {
+			var passwordInput = document.getElementById("password");
+			var eyeIcon = document.querySelector(".eye-icon i");
+
+			if (passwordInput.type === "password") {
+				passwordInput.type = "text";
+				eyeIcon.classList.remove("fa-eye");
+				eyeIcon.classList.add("fa-eye-slash");
+			} else {
+				passwordInput.type = "password";
+				eyeIcon.classList.remove("fa-eye-slash");
+				eyeIcon.classList.add("fa-eye");
+			}
+		}
+	</script>
+</body>
+</html>

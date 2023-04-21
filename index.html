@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cybersecurity Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-JaT6ZsG8Aa0K0l2QCBsG6W4K4zvLhyIcF7+uM4WZ9XvZfOYJug7B1ca+4J4Qw/M/4/4eV4lGzKj8VvN6oC+7VQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="signup.html">Sign Up</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h1>Welcome to our Cybersecurity Page</h1>
+			<p>We offer top-notch cybersecurity solutions to protect your business from online threats.</p>
+			<button>Learn More</button>
+		</section>
+		<section class="services">
+			<h2>Our Services</h2>
+			<div class="service">
+				<i class="fas fa-shield-alt"></i>
+				<h3>Network Security</h3>
+				<p>Protect your network from unauthorized access and attacks.</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-lock"></i>
+				<h3>Encryption</h3>
+				<p>Secure your data with strong encryption algorithms.</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-user-shield"></i>
+				<h3>Identity and Access Management</h3>
+				<p>Manage user identities and access to your systems and applications.</p>
+			</div>
+		</section>
+		<section class="contact">
+			<h2>Contact Us</h2>
+			<form action="submit.php" method="post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Cybersecurity Page</p>
+	</footer>
+</body>
+</html>

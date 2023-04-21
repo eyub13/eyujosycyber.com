@@ -1,0 +1,161 @@
+/* General styles */
+body {
+	background-color: #f5f5f5;
+	color: #333;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f5f5f5;
+}
+
+/* Hero section styles */
+.hero {
+	background-image: url('hero.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	padding: 50px;
+}
+
+.hero h1 {
+	font-size: 3em;
+	margin-top: 0;
+}
+
+.hero p {
+	font-size: 1.5em;
+	margin-bottom: 50px;
+}
+
+.hero button {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.hero button:hover {
+	background-color: #f5f5f5;
+	color: #333;
+}
+
+/* Services section styles */
+.services {
+	background-color: #fff;
+	padding: 50px;
+	text-align: center;
+}
+
+.services h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+.service {
+	display: inline-block;
+	margin: 20px;
+	width: 300px;
+	text-align: left;
+}
+
+.service i {
+	font-size: 3em;
+	color: #333;
+	margin-right: 20px;
+}
+
+.service h3 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+.service p {
+	font-size: 1.2em;
+}
+
+/* Contact section styles */
+.contact {
+	background-color: #f5f5f5;
+	padding: 50px;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+.contact form {
+	display: inline-block;
+	text-align: left;
+}
+
+.contact label {
+	display: block;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.2em;
+}
+
+.contact button[type="submit"] {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+	background-color: #f5f5f5;
+	color: #333;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
